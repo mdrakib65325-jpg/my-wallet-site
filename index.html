@@ -1,51 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MD ROFIKULL Islam — Virtual Card Demo</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Card Demo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="page">
-  <div class="header">
-    <div class="logo">MD WALLET</div>
-    <span>DEMO CARD</span>
-  </div>
+  <main class="wrap">
+    <h1>Virtual Card</h1>
+    <p class="notice">DEMO / TEST CARD — not a real payment card</p>
 
-  <div class="card">
-    <div class="shine"></div>
-    <div class="card-head">
-      <div class="brand">VIRTUAL<br><small>CARD</small></div>
-      <div class="chip"></div>
-    </div>
-
-    <div class="demo">DEMO</div>
-
-    <div class="number">•••• •••• •••• 9373</div>
-
-    <div class="details">
-      <div class="holder">
-        <label>CARD HOLDER</label>
-        <strong>MD ROFIKULL ISLAM</strong>
+    <section class="card" aria-label="Demo virtual card">
+      <div class="top">
+        <span class="chip"></span>
+        <span class="brand">MASTER<span>CARD</span></span>
       </div>
-      <div>
-        <label>EXPIRES</label>
-        <strong>34/56</strong>
-      </div>
-      <div>
-        <label>CVV</label>
-        <strong>•••</strong>
-      </div>
-    </div>
 
-    <div class="notpay">DEMO • NOT FOR PAYMENT</div>
-  </div>
+      <div class="number">9839 •••• •••• 3938</div>
 
-  <div class="notice">
-    <h2>Virtual Card</h2>
-    <p>This is a visual demo card. It has no payment or transaction functionality.</p>
-  </div>
-</div>
+      <div class="details">
+        <div>
+          <small>CARD HOLDER</small>
+          <strong>MD ABDULLAH KHAN</strong>
+        </div>
+        <div>
+          <small>VALID THRU</small>
+          <strong>02/94</strong>
+        </div>
+      </div>
+      <div class="demo-cvv">CVV •••</div>
+      <div class="watermark">DEMO</div>
+    </section>
+
+    <p class="safe">For a real card, use the card issued by your bank/provider. Never publish a real CVV or full card number online.</p>
+  </main>
 </body>
 </html>
