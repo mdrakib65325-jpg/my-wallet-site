@@ -1,52 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Demo Virtual Card</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MD ROFIKULL Islam — Virtual Card Demo</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main class="wrap">
-  <div class="top">
-    <span class="badge">DEMO WALLET</span>
-    <span class="status">● Demo mode</span>
+<div class="page">
+  <div class="header">
+    <div class="logo">MD WALLET</div>
+    <span>DEMO CARD</span>
   </div>
 
-  <section class="card" aria-label="Demo virtual card">
-    <div class="card-top">
+  <div class="card">
+    <div class="shine"></div>
+    <div class="card-head">
       <div class="brand">VIRTUAL<br><small>CARD</small></div>
       <div class="chip"></div>
     </div>
 
-    <div class="watermark">DEMO</div>
+    <div class="demo">DEMO</div>
 
-    <div class="number" id="cardNumber">5555 5555 5555 5555</div>
+    <div class="number">•••• •••• •••• 9373</div>
 
-    <div class="card-bottom">
-      <div>
+    <div class="details">
+      <div class="holder">
         <label>CARD HOLDER</label>
-        <div class="value" id="holder">DEMO USER</div>
+        <strong>MD ROFIKULL ISLAM</strong>
       </div>
       <div>
         <label>EXPIRES</label>
-        <div class="value">12/30</div>
+        <strong>34/56</strong>
       </div>
       <div>
         <label>CVV</label>
-        <div class="value">123</div>
+        <strong>•••</strong>
       </div>
     </div>
-    <div class="notpay">DEMO — NOT FOR PAYMENT</div>
-  </section>
 
-  <section class="panel">
-    <h2>Create a demo card</h2>
-    <input id="name" maxlength="24" placeholder="Card holder name">
-    <button id="generate">Generate Demo Card</button>
-    <p id="msg"></p>
-  </section>
-</main>
-<script src="script.js"></script>
+    <div class="notpay">DEMO • NOT FOR PAYMENT</div>
+  </div>
+
+  <div class="notice">
+    <h2>Virtual Card</h2>
+    <p>This is a visual demo card. It has no payment or transaction functionality.</p>
+  </div>
+</div>
 </body>
 </html>

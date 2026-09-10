@@ -1,1 +1,23 @@
-*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Arial,sans-serif;background:#0b1020;color:#fff;display:flex;justify-content:center}.wrap{width:min(92%,520px);padding:28px 0}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.badge{font-weight:800;letter-spacing:1px}.status{font-size:13px;color:#a7b3c9}.card{position:relative;overflow:hidden;min-height:300px;padding:28px;border-radius:24px;background:linear-gradient(135deg,#2638a7,#7b2fb9 55%,#111936);box-shadow:0 25px 60px #0008}.card:before,.card:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);background:#ffffff16}.card:before{width:240px;height:240px;right:-90px;top:-100px}.card:after{width:180px;height:180px;left:-80px;bottom:-100px}.card-top,.card-bottom,.number{position:relative;z-index:2}.card-top{display:flex;justify-content:space-between;align-items:center}.brand{font-weight:900;font-size:18px;line-height:.85}.brand small{font-size:9px;letter-spacing:3px}.chip{width:48px;height:36px;border-radius:8px;background:linear-gradient(135deg,#e8d8a0,#fff2bb,#c49b43);border:1px solid #fff7}.number{margin-top:58px;font-size:23px;letter-spacing:3px;font-weight:700}.card-bottom{display:flex;gap:22px;margin-top:26px}.card-bottom>div:first-child{flex:1}label{display:block;font-size:8px;letter-spacing:1.5px;color:#cbd2e5;margin-bottom:5px}.value{font-size:12px;font-weight:700}.watermark{position:absolute;right:18px;top:105px;font-size:52px;font-weight:900;opacity:.08;transform:rotate(-15deg)}.notpay{position:absolute;right:18px;bottom:16px;font-size:9px;font-weight:900;letter-spacing:1.2px;background:#fff;color:#12182e;padding:6px 9px;border-radius:5px}.panel{margin-top:22px;background:#141b31;border:1px solid #27304a;border-radius:18px;padding:20px}.panel h2{margin:0 0 14px;font-size:18px}.panel input{width:100%;padding:14px;border-radius:10px;border:1px solid #39445f;background:#0d1325;color:#fff;outline:none}.panel button{width:100%;margin-top:10px;padding:14px;border:0;border-radius:10px;background:#fff;color:#10162b;font-weight:800;cursor:pointer}.panel p{font-size:12px;color:#9eabc4;margin:12px 0 0}@media(max-width:430px){.card{min-height:275px;padding:22px}.number{font-size:18px;margin-top:52px}.card-bottom{gap:12px}.notpay{font-size:8px}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Arial,sans-serif;background:#080d19;color:#fff;display:flex;justify-content:center}
+.page{width:min(94%,560px);padding:28px 0}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.logo{font-size:20px;font-weight:900;letter-spacing:1px}
+.header span{font-size:11px;color:#aeb8cc;border:1px solid #39445e;padding:7px 10px;border-radius:20px}
+.card{position:relative;overflow:hidden;min-height:320px;border-radius:26px;padding:28px;background:linear-gradient(135deg,#15265e,#5734a6 55%,#101936);box-shadow:0 25px 70px #0009}
+.shine{position:absolute;width:300px;height:300px;border-radius:50%;right:-120px;top:-160px;background:#ffffff15}
+.card-head{display:flex;justify-content:space-between;align-items:center;position:relative}
+.brand{font-weight:900;font-size:18px;line-height:.85}
+.brand small{font-size:9px;letter-spacing:3px}
+.chip{width:50px;height:38px;border-radius:8px;background:linear-gradient(135deg,#d6c17c,#fff1b4,#a98842);border:1px solid #fff8}
+.demo{position:absolute;right:20px;top:115px;font-size:55px;font-weight:900;letter-spacing:3px;opacity:.08;transform:rotate(-14deg)}
+.number{position:relative;margin-top:70px;font-size:23px;letter-spacing:3px;font-weight:800}
+.details{position:relative;display:flex;gap:24px;margin-top:28px;align-items:end}
+.holder{flex:1}
+label{display:block;font-size:8px;letter-spacing:1.5px;color:#bdc7dc;margin-bottom:6px}
+strong{font-size:12px;letter-spacing:.5px}
+.notpay{position:absolute;bottom:17px;right:20px;background:#fff;color:#10162c;border-radius:5px;padding:6px 9px;font-size:8px;font-weight:900;letter-spacing:1px}
+.notice{margin-top:20px;padding:20px;border:1px solid #28334c;background:#11182a;border-radius:18px}
+.notice h2{margin:0 0 7px;font-size:18px}
+.notice p{margin:0;color:#9faac0;font-size:13px;line-height:1.5}
+@media(max-width:430px){.card{min-height:285px;padding:22px}.number{font-size:18px;margin-top:55px}.details{gap:12px}.notpay{font-size:7px}.demo{font-size:45px}}
