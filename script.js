@@ -1,2 +1,1 @@
-function toggleMenu(){document.getElementById('menu').classList.toggle('show')}
-document.getElementById('year').textContent=new Date().getFullYear();
+const holder=document.getElementById('holder');const name=document.getElementById('name');const msg=document.getElementById('msg');document.getElementById('generate').addEventListener('click',()=>{const n=name.value.trim().toUpperCase();holder.textContent=n||'DEMO USER';msg.textContent='Demo card updated. This card has no payment functionality.';});

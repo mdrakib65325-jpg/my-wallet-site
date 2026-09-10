@@ -1,54 +1,52 @@
 <!doctype html>
-<html lang="bn">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rakib Digital Services — Virtual Card Demo</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Demo Virtual Card</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand"><span class="brand-mark">R</span><span>RAKIB DIGITAL SERVICES</span></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="user.html">User Panel</a>
-      <a href="admin.html">Admin Panel</a>
-    </nav>
-  </header>
+<main class="wrap">
+  <div class="top">
+    <span class="badge">DEMO WALLET</span>
+    <span class="status">● Demo mode</span>
+  </div>
 
-  <main class="hero">
-    <div class="hero-copy">
-      <span class="eyebrow">VIRTUAL CARD DEMO</span>
-      <h1>আপনার ডিজিটাল কার্ড সার্ভিস—এক জায়গায়</h1>
-      <p>Rakib Digital Services-এর জন্য একটি demo virtual-card dashboard। এখানে card, balance ও transaction-এর সবকিছু <b>demo/test data</b> দিয়ে দেখানো হয়েছে।</p>
-      <div class="actions">
-        <a class="btn primary" href="user.html">User Panel খুলুন</a>
-        <a class="btn ghost" href="admin.html">Admin Panel খুলুন</a>
-      </div>
+  <section class="card" aria-label="Demo virtual card">
+    <div class="card-top">
+      <div class="brand">VIRTUAL<br><small>CARD</small></div>
+      <div class="chip"></div>
     </div>
 
-    <div class="card-wrap">
-      <div class="demo-card">
-        <div class="card-top"><span>RAKIB DIGITAL</span><span>DEMO</span></div>
-        <div class="chip"></div>
-        <div class="card-number">5555 5555 5555 4444</div>
-        <div class="card-bottom">
-          <div><small>CARD HOLDER</small><strong>RAKIB DEMO USER</strong></div>
-          <div><small>VALID THRU</small><strong>12/30</strong></div>
-          <div class="mc"><i></i><i></i></div>
-        </div>
-      </div>
-      <p class="notice">⚠ এটি আসল Mastercard নয়। কোনো real card/payment credential তৈরি বা সংরক্ষণ করা হয় না।</p>
-    </div>
-  </main>
+    <div class="watermark">DEMO</div>
 
-  <section class="features">
-    <div><b>👤 User Panel</b><span>Profile, balance, demo card ও transactions</span></div>
-    <div><b>🛠 Admin Panel</b><span>Users, card requests ও demo transaction controls</span></div>
-    <div><b>🔒 Safe Demo</b><span>Browser localStorage-এ কেবল demo data</span></div>
+    <div class="number" id="cardNumber">5555 5555 5555 5555</div>
+
+    <div class="card-bottom">
+      <div>
+        <label>CARD HOLDER</label>
+        <div class="value" id="holder">DEMO USER</div>
+      </div>
+      <div>
+        <label>EXPIRES</label>
+        <div class="value">12/30</div>
+      </div>
+      <div>
+        <label>CVV</label>
+        <div class="value">123</div>
+      </div>
+    </div>
+    <div class="notpay">DEMO — NOT FOR PAYMENT</div>
   </section>
 
-  <footer>© <span id="year"></span> Rakib Digital Services · Demo Website</footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <section class="panel">
+    <h2>Create a demo card</h2>
+    <input id="name" maxlength="24" placeholder="Card holder name">
+    <button id="generate">Generate Demo Card</button>
+    <p id="msg"></p>
+  </section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
