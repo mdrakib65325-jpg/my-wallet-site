@@ -1,69 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rakib Digital — Online Payment & Digital Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rakib Digital Services — Virtual Card Demo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="topbar">
-      <span>✉ Mdrakib65325@gmail.com</span>
-      <span>☎ 01978365292</span>
-    </div>
-    <nav class="nav">
-      <div class="brand"><span class="logo">◆</span><div><b>RAKIB</b><small>DIGITAL SERVICES</small></div></div>
-      <button class="menu-btn" onclick="toggleMenu()">☰</button>
-      <div id="menu" class="menu">
-        <a href="#home">হোম</a>
-        <a href="#services">সার্ভিস</a>
-        <a href="#about">আমাদের সম্পর্কে</a>
-        <a href="#contact">যোগাযোগ</a>
-      </div>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">R</span><span>RAKIB DIGITAL SERVICES</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="user.html">User Panel</a>
+      <a href="admin.html">Admin Panel</a>
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="badge">— Rakib Digital Services —</div>
-      <h1>অনলাইন পেমেন্ট ও<br><span>ডিজিটাল সার্ভিস</span><br>এক জায়গায়</h1>
-      <p>ইন্টারন্যাশনাল পেমেন্ট, কার্ড সার্ভিস ও ডিজিটাল প্রচারণা সংক্রান্ত সেবা।</p>
+  <main class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">VIRTUAL CARD DEMO</span>
+      <h1>আপনার ডিজিটাল কার্ড সার্ভিস—এক জায়গায়</h1>
+      <p>Rakib Digital Services-এর জন্য একটি demo virtual-card dashboard। এখানে card, balance ও transaction-এর সবকিছু <b>demo/test data</b> দিয়ে দেখানো হয়েছে।</p>
       <div class="actions">
-        <a class="btn primary" href="https://wa.me/8801978365292?text=Assalamu%20Alaikum%2C%20ami%20service%20niye%20jante%20chai" target="_blank">WhatsApp-এ যোগাযোগ</a>
-        <a class="btn secondary" href="#services">সার্ভিস দেখুন</a>
+        <a class="btn primary" href="user.html">User Panel খুলুন</a>
+        <a class="btn ghost" href="admin.html">Admin Panel খুলুন</a>
       </div>
-    </section>
+    </div>
 
-    <section id="services" class="section">
-      <div class="section-title">আমাদের সার্ভিস</div>
-      <h2>আপনার প্রয়োজনীয় ডিজিটাল সেবা</h2>
-      <div class="cards">
-        <article><div class="icon">💳</div><h3>International Card</h3><p>আন্তর্জাতিক অনলাইন পেমেন্টের জন্য কার্ড-সংক্রান্ত সেবা।</p><a href="https://wa.me/8801978365292?text=International%20Card%20service%20niye%20jante%20chai" target="_blank">বিস্তারিত জানতে →</a></article>
-        <article><div class="icon">💰</div><h3>Online Payment</h3><p>অনলাইন পেমেন্ট ও আন্তর্জাতিক পেমেন্ট সংক্রান্ত সহায়তা।</p><a href="https://wa.me/8801978365292?text=Online%20Payment%20service%20niye%20jante%20chai" target="_blank">বিস্তারিত জানতে →</a></article>
-        <article><div class="icon">📣</div><h3>Facebook Boost</h3><p>Facebook পোস্ট/পেজ প্রচারণা ও বিজ্ঞাপন সেটআপে সহায়তা।</p><a href="https://wa.me/8801978365292?text=Facebook%20Boost%20service%20niye%20jante%20chai" target="_blank">বিস্তারিত জানতে →</a></article>
-        <article><div class="icon">▶️</div><h3>YouTube Promotion</h3><p>YouTube ভিডিও প্রচারণা ও ডিজিটাল মার্কেটিং সেবা।</p><a href="https://wa.me/8801978365292?text=YouTube%20Promotion%20service%20niye%20jante%20chai" target="_blank">বিস্তারিত জানতে →</a></article>
+    <div class="card-wrap">
+      <div class="demo-card">
+        <div class="card-top"><span>RAKIB DIGITAL</span><span>DEMO</span></div>
+        <div class="chip"></div>
+        <div class="card-number">5555 5555 5555 4444</div>
+        <div class="card-bottom">
+          <div><small>CARD HOLDER</small><strong>RAKIB DEMO USER</strong></div>
+          <div><small>VALID THRU</small><strong>12/30</strong></div>
+          <div class="mc"><i></i><i></i></div>
+        </div>
       </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="section-title">আমাদের সম্পর্কে</div>
-      <h2>বিশ্বাসযোগ্য ডিজিটাল সেবার জন্য Rakib</h2>
-      <p>Rakib Digital Services অনলাইন পেমেন্ট, কার্ড-সংক্রান্ত সেবা এবং ডিজিটাল প্রচারণার প্রয়োজনীয় সহায়তা দেওয়ার জন্য তৈরি। সার্ভিস নেওয়ার আগে মূল্য, শর্ত ও প্রাপ্যতা WhatsApp-এ জেনে নিন।</p>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="section-title">যোগাযোগ</div>
-      <h2>সার্ভিস নিতে যোগাযোগ করুন</h2>
-      <p>WhatsApp: <b>01978365292</b></p>
-      <p>Phone: <b>01738365291</b></p>
-      <p>Email: <b>Mdrakib65325@gmail.com</b></p>
-      <a class="btn primary" href="https://wa.me/8801978365292?text=Assalamu%20Alaikum%2C%20ami%20Rakib%20Digital%20Services%20niye%20jante%20chai" target="_blank">🟢 WhatsApp-এ মেসেজ করুন</a>
-    </section>
+      <p class="notice">⚠ এটি আসল Mastercard নয়। কোনো real card/payment credential তৈরি বা সংরক্ষণ করা হয় না।</p>
+    </div>
   </main>
 
-  <footer>© <span id="year"></span> Rakib Digital Services. All rights reserved.</footer>
-  <a class="floating-wa" href="https://wa.me/8801978365292?text=Assalamu%20Alaikum%2C%20ami%20service%20niye%20jante%20chai" target="_blank">◉ WhatsApp</a>
-  <script src="script.js"></script>
+  <section class="features">
+    <div><b>👤 User Panel</b><span>Profile, balance, demo card ও transactions</span></div>
+    <div><b>🛠 Admin Panel</b><span>Users, card requests ও demo transaction controls</span></div>
+    <div><b>🔒 Safe Demo</b><span>Browser localStorage-এ কেবল demo data</span></div>
+  </section>
+
+  <footer>© <span id="year"></span> Rakib Digital Services · Demo Website</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

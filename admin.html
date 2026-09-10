@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Panel — Rakib Digital</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="topbar"><div class="brand"><span class="brand-mark">R</span>RAKIB DIGITAL SERVICES</div><nav><a href="index.html">Home</a><a href="user.html">User Panel</a><a href="admin.html">Admin Panel</a></nav></header>
+<main class="panel"><div class="panel-head"><div><p class="eyebrow">ADMIN PANEL</p><h1>Admin Dashboard 🛠️</h1><p class="muted">Demo management interface — কোনো real card issuance/payment নেই।</p></div><a class="back" href="index.html">← Home</a></div>
+<div class="grid"><div class="box"><h3>Total Users</h3><div class="balance" id="totalUsers">0</div></div><div class="box"><h3>Active Cards</h3><div class="balance" id="activeCards">0</div></div><div class="box"><h3>Demo Requests</h3><div class="balance">3</div></div></div>
+<div class="box" style="margin-top:18px"><div class="panel-head"><h3>User Management</h3><button class="btn ghost small" onclick="resetDemo()">Reset Demo Data</button></div><div class="table-wrap"><table class="table"><thead><tr><th>USER</th><th>EMAIL</th><th>STATUS</th><th>BALANCE</th><th>ACTION</th></tr></thead><tbody id="users"></tbody></table></div></div>
+<div class="box" style="margin-top:18px"><h3>Card Requests</h3><div class="table-wrap"><table class="table"><tr><th>REQUEST</th><th>USER</th><th>TYPE</th><th>STATUS</th><th>ACTION</th></tr><tr><td>#REQ-1001</td><td>Rakib Demo User</td><td>Virtual Card</td><td><span class="pill">Approved</span></td><td><button class="btn ghost small" onclick="alert('Demo only')">View</button></td></tr><tr><td>#REQ-1002</td><td>Demo Customer</td><td>Virtual Card</td><td><span class="pill danger">Pending</span></td><td><button class="btn primary small" onclick="alert('Demo only: request approved')">Approve</button></td></tr></table></div></div>
+</main><footer>Rakib Digital Services · Demo Admin Panel</footer>
+<script src="app.js"></script><script>
+function render(){
+ const users=getUsers();
+ document.getElementById("totalUsers").textContent=users.length;
+ document.getElementById("activeCards").textContent=users.filter(u=>u.status==="Active").length;
+ document.getElementById("users").innerHTML=users.map(u=>`<tr><td>${u.name}</td><td>${u.email}</td><td><span class="pill ${u.status!=="Active"?"danger":""}">${u.status}</span></td><td>${money(u.balance)}</td><td><button class="btn ghost small" onclick="alert('Demo user: ${u.name}')">View</button></td></tr>`).join("");
+}
+render();
+</script></body></html>
