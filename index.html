@@ -1,92 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Brand — Mobile Wallet</title>
+  <title>Rakib Digital — Online Payment & Digital Services</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <div class="topbar">
-    <div class="contact">
-      <span>✉ your@email.com</span>
-      <span>☎ +880 1XXXXXXXXX</span>
-    </div>
-    <div class="social">
-      <span>Social Links:</span>
-      <a href="#" aria-label="Facebook">f</a>
-      <a href="#" aria-label="Twitter">𝕏</a>
-      <a href="#" aria-label="LinkedIn">in</a>
-      <a href="#" aria-label="Pinterest">p</a>
-    </div>
-    <button class="language" onclick="toggleLanguage()">English ▾</button>
-  </div>
-
   <header>
-    <a class="brand" href="#">
-      <div class="brand-icon">◆</div>
-      <div>
-        <strong>YOUR BRAND</strong>
-        <small>WALLET SERVICE</small>
+    <div class="topbar">
+      <span>✉ Mdrakib65325@gmail.com</span>
+      <span>☎ 01978365292</span>
+    </div>
+    <nav class="nav">
+      <div class="brand"><span class="logo">◆</span><div><b>RAKIB</b><small>DIGITAL SERVICES</small></div></div>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <div id="menu" class="menu">
+        <a href="#home">হোম</a>
+        <a href="#services">সার্ভিস</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#contact">যোগাযোগ</a>
       </div>
-    </a>
-
-    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav id="nav">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main id="home" class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">— We are Your Brand —</p>
-      <h1>The Ultimate Solution<br>for Your Wallet Service</h1>
-      <p class="subtitle">
-        Complete solution for mobile money and wallet systems.
-        User, Agent and Merchant features with eCommerce API and QR-code support.
-      </p>
-
-      <div class="buttons">
-        <a class="btn primary" href="#contact">Get Started</a>
-        <a class="btn video" href="#about"><span>▶</span> See How</a>
+  <main>
+    <section id="home" class="hero">
+      <div class="badge">— Rakib Digital Services —</div>
+      <h1>অনলাইন পেমেন্ট ও<br><span>ডিজিটাল সার্ভিস</span><br>এক জায়গায়</h1>
+      <p>ইন্টারন্যাশনাল পেমেন্ট, কার্ড সার্ভিস ও ডিজিটাল প্রচারণা সংক্রান্ত সেবা।</p>
+      <div class="actions">
+        <a class="btn primary" href="https://wa.me/8801978365292?text=Assalamu%20Alaikum%2C%20ami%20service%20niye%20jante%20chai" target="_blank">WhatsApp-এ যোগাযোগ</a>
+        <a class="btn secondary" href="#services">সার্ভিস দেখুন</a>
       </div>
-    </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-title">আমাদের সার্ভিস</div>
+      <h2>আপনার প্রয়োজনীয় ডিজিটাল সেবা</h2>
+      <div class="cards">
+        <article><div class="icon">💳</div><h3>International Card</h3><p>আন্তর্জাতিক অনলাইন পেমেন্টের জন্য কার্ড-সংক্রান্ত সেবা।</p><a href="https://wa.me/8801978365292?text=International%20Card%20service%20niye%20jante%20chai" target="_blank">বিস্তারিত জানতে →</a></article>
+        <article><div class="icon">💰</div><h3>Online Payment</h3><p>অনলাইন পেমেন্ট ও আন্তর্জাতিক পেমেন্ট সংক্রান্ত সহায়তা।</p><a href="https://wa.me/8801978365292?text=Online%20Payment%20service%20niye%20jante%20chai" target="_blank">বিস্তারিত জানতে →</a></article>
+        <article><div class="icon">📣</div><h3>Facebook Boost</h3><p>Facebook পোস্ট/পেজ প্রচারণা ও বিজ্ঞাপন সেটআপে সহায়তা।</p><a href="https://wa.me/8801978365292?text=Facebook%20Boost%20service%20niye%20jante%20chai" target="_blank">বিস্তারিত জানতে →</a></article>
+        <article><div class="icon">▶️</div><h3>YouTube Promotion</h3><p>YouTube ভিডিও প্রচারণা ও ডিজিটাল মার্কেটিং সেবা।</p><a href="https://wa.me/8801978365292?text=YouTube%20Promotion%20service%20niye%20jante%20chai" target="_blank">বিস্তারিত জানতে →</a></article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="section-title">আমাদের সম্পর্কে</div>
+      <h2>বিশ্বাসযোগ্য ডিজিটাল সেবার জন্য Rakib</h2>
+      <p>Rakib Digital Services অনলাইন পেমেন্ট, কার্ড-সংক্রান্ত সেবা এবং ডিজিটাল প্রচারণার প্রয়োজনীয় সহায়তা দেওয়ার জন্য তৈরি। সার্ভিস নেওয়ার আগে মূল্য, শর্ত ও প্রাপ্যতা WhatsApp-এ জেনে নিন।</p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-title">যোগাযোগ</div>
+      <h2>সার্ভিস নিতে যোগাযোগ করুন</h2>
+      <p>WhatsApp: <b>01978365292</b></p>
+      <p>Phone: <b>01738365291</b></p>
+      <p>Email: <b>Mdrakib65325@gmail.com</b></p>
+      <a class="btn primary" href="https://wa.me/8801978365292?text=Assalamu%20Alaikum%2C%20ami%20Rakib%20Digital%20Services%20niye%20jante%20chai" target="_blank">🟢 WhatsApp-এ মেসেজ করুন</a>
+    </section>
   </main>
 
-  <section id="services" class="section">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card"><h3>User</h3><p>Manage wallet balance, transactions and payments.</p></div>
-      <div class="card"><h3>Agent</h3><p>Handle customer transactions from an agent dashboard.</p></div>
-      <div class="card"><h3>Merchant</h3><p>Accept payments with QR and online checkout.</p></div>
-    </div>
-  </section>
-
-  <section id="about" class="section light">
-    <h2>About</h2>
-    <p>Replace this text with your own company's real information, terms and service details.</p>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>Email: your@email.com · Phone: +880 1XXXXXXXXX</p>
-  </section>
-
-  <a class="whatsapp" href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener">
-    <span>◉</span> Chat on WhatsApp
-  </a>
-
+  <footer>© <span id="year"></span> Rakib Digital Services. All rights reserved.</footer>
+  <a class="floating-wa" href="https://wa.me/8801978365292?text=Assalamu%20Alaikum%2C%20ami%20service%20niye%20jante%20chai" target="_blank">◉ WhatsApp</a>
   <script src="script.js"></script>
 </body>
 </html>

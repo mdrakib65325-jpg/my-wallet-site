@@ -1,9 +1,2 @@
-function toggleMenu(){
-  document.getElementById('nav').classList.toggle('show');
-}
-function toggleLanguage(){
-  alert('Add your language-switching system here.');
-}
-document.querySelectorAll('#nav a').forEach(a=>{
-  a.addEventListener('click',()=>document.getElementById('nav').classList.remove('show'));
-});
+function toggleMenu(){document.getElementById('menu').classList.toggle('show')}
+document.getElementById('year').textContent=new Date().getFullYear();
